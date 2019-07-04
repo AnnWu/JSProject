@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>JS_Function</title>
+
+</head>
+<body>
+<script type="text/javascript">
+
+    var gName ="AnnWu"
+// 函数的定义和调用
+    function fun1(){
+        alert("this is an alert dialog !");
+    }
+   // fun1();
+   function fun2(x){
+        document.write("A function with param: "+x+"<br />");
+   }
+   function fun3(x1,y1){
+       document.write(x1+ "is better than"+y1 +"<br />");
+   }
+   function addNum(a,b){
+       var c=a+b;
+       return c;
+   }
+   
+   function doFirst(){
+        document.write("1111111敏捷 <br>");
+   }
+   function doSecond(){
+        document.write("222222 <br>");
+   }
+   //函数调用
+   function start(){
+        doFirst();
+        doSecond();
+   }
+    function fun4(){
+        var lName="WuAnn";
+        //调用全局变量
+        document.write("<br> 全局变量值"+gName+"<br />");
+        document.write("局部变量值"+lName+"<br />");
+        
+    }
+
+   fun2("AnnWu");
+   fun3("Ann","Wu");
+   fun3("Wu","Ann");
+   document.write(addNum()+"<br />");
+   document.write(addNum(10,20)+"<br />");
+   start();
+   fun4();
+   var x=5;
+   x +=5;
+   x *=2;
+   document.write(x);
+   
+   
+   
+</script>
+<form>
+<input type="button" value="Click me show a alert "onclick="fun1()">
+
+</form>
+</body>
+</html>
