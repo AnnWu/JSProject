@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>JS_Object</title>
+<script type="text/javascript">
+        //创建一个对象
+    function person(name,age){
+        this.name=name;
+        this.age=age;
+        this.leftYear=leftYear;
+    }
+    function leftYear(){
+        var leftNum=100-this.age
+        return leftNum;
+    }
+    	// 定义一个对象
+    var my=new person("WM",28);
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+    document.write(my.name + " have " + my.leftYear() + " years");
+</script>
+</body>
+</html>

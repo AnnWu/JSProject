@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>JS_Object</title>
+<script type="text/javascript">
+        //创建一个对象
+    function person(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    	// 定义一个对象
+	Wm = {name:"WM", age:24};
+	Ann = {name:"Ann", age:18};
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+    var my=new person("WM",18);
+    document.write("My name is :"+my.name+",my age is:"+my.age+"<br />");
+    document.write(Wm.name + " love " + Ann.name + " because she is " + Ann.age);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>JS_Array</title>
+
+</head>
+<body>
+<script type="text/javascript">
+    var people1 = new Array("张三","李四","王二","Lucy","Tom");
+	document.write(people1[0]+"<br />");
+    <!--1. 通过Array创建数组，用小括号表示，里面每个元素用逗号隔开  2. 数组是通过索引来找元素的，例如上面people[0]代表“张三”  3. 数组越界，例如people[5]，前端页面显示undefined-->
+    
+    var people = new Array(5);//或者无法确定数组大小时使用：var people=new Array();
+	people[0] = "张三";
+	people[1] = "李四";
+	people[2] = "王二";
+	people[3] = "Lucy";
+	people[4] = "Tom";
+	document.write(people[3]);
+
+</script>
+</body>
+</html>
